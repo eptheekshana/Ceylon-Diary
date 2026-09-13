@@ -36,7 +36,7 @@
         .nav-icons { display: flex; gap: 20px; color: #fff; font-size: 1.2rem; }
         
         /* -- HERO -- */
-        .hero { position: relative; min-height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url("img/Nine Arch Bridge.jpg") center/cover; display: flex; align-items: center; padding: 0 5%; }
+        .hero { position: relative; min-height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url("../img/Nine Arch Bridge.jpg") center/cover; display: flex; align-items: center; padding: 0 5%; }
         .hero-content { max-width: 800px; color: #fff; z-index: 2; margin-top: 50px; }
         .hero-title-1 { font-size: 3.5rem; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; line-height: 1; }
         .hero-title-2 { font-size: 8rem; color: var(--blue-bg); margin: -20px 0 -10px; line-height: 1; transform: rotate(-3deg); }
@@ -78,7 +78,7 @@
         .card-sq.active .card-overlay { z-index: 2; align-items: center; justify-content: center; text-align: center; font-size: 0.9rem; padding: 30px; font-weight: 400; opacity: 1; background: none; }
         
         /* -- PARALLAX BANNER -- */
-        .parallax-banner { position: relative; height: 50vh; display: flex; align-items: center; padding: 0 10%; color: #fff; background: url("img/Yala.jpg") center/cover fixed; }
+        .parallax-banner { position: relative; height: 50vh; display: flex; align-items: center; padding: 0 10%; color: #fff; background: url("../img/Yala.jpg") center/cover fixed; }
         .parallax-banner::before { content: ''; position: absolute; inset: 0; background: rgba(58,29,15,0.6); }
         .parallax-content { position: relative; z-index: 2; max-width: 600px; }
         .parallax-title { font-size: 4rem; font-weight: 900; line-height: 1.1; margin-bottom: 10px; }
