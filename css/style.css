@@ -148,7 +148,17 @@
         .torn-navy-top { position: absolute; top: 0; left: 0; width: 100%; height: 30px; background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,0 L1200,0 L1200,20 Q1150,10 1100,25 T1000,15 T900,25 T800,10 T700,30 T600,15 T500,25 T400,10 T300,25 T200,10 T100,25 T0,10 Z" fill="%233a1d0f"/></svg>') center top/100% 100% no-repeat; z-index: 10; }
         .torn-navy-bottom { position: absolute; bottom: 0; left: 0; width: 100%; height: 30px; background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 L1200,30 L1200,10 Q1150,20 1100,5 T1000,20 T900,5 T800,20 T700,0 T600,15 T500,5 T400,25 T300,5 T200,20 T100,5 T0,15 Z" fill="%233a1d0f"/></svg>') center bottom/100% 100% no-repeat; z-index: 10; }
         
-        /* -- MOBILE RESPONSIVENESS & UX REDESIGN -- */
+        
+/* -- TRANSFERS SECTION -- */
+.transfers-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center; }
+.transfers-features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px; }
+.transfers-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; list-style: none; margin: 0; padding: 0; }
+
+/* Global overflow safeguard */
+html, body { max-width: 100vw; overflow-x: hidden; }
+
+/* -- MOBILE RESPONSIVENESS -- */
+/* -- MOBILE RESPONSIVENESS & UX REDESIGN -- */
         /* Hamburger Menu Icon */
         .hamburger { display: none; background: none; border: none; color: #fff; font-size: 2rem; cursor: pointer; padding: 10px; z-index: 10001; position: relative; }
 
@@ -166,6 +176,10 @@
             .activism-bg-text { font-size: 8rem; top: 0; }
             .test-grid { flex-direction: column; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
+            .transfers-grid { grid-template-columns: 1fr; gap: 40px; }
+            .transfers-features { grid-template-columns: 1fr; gap: 15px; }
+            .transfers-list { grid-template-columns: 1fr; }
+
         }
 
         @media (max-width: 768px) {
