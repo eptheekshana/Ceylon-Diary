@@ -163,6 +163,62 @@
 html, body { max-width: 100vw; overflow-x: hidden; }
 
 /* -- MOBILE RESPONSIVENESS -- */
+
+        /* -- PREMIUM BUTTONS -- */
+        .btn-premium {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 36px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(224, 79, 0, 0.2);
+            text-decoration: none;
+        }
+        .btn-premium i { font-size: 1.2rem; }
+        .btn-premium:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(224, 79, 0, 0.3);
+            background: var(--accent-hover);
+            color: #fff;
+        }
+        .btn-premium.whatsapp { background: #25D366; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2); }
+        .btn-premium.whatsapp:hover { background: #20b858; box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3); }
+
+        /* -- FLOATING CONTACT -- */
+        .floating-contact {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 9999;
+        }
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .float-wa { background: #25D366; }
+        .float-wa:hover { background: #20b858; transform: scale(1.1) translateY(-5px); color: white; }
+        .float-mail { background: var(--accent); }
+        .float-mail:hover { background: var(--accent-hover); transform: scale(1.1) translateY(-5px); color: white; }
+
 /* -- MOBILE RESPONSIVENESS & UX REDESIGN -- */
         /* Hamburger Menu Icon */
         .hamburger { display: none; background: none; border: none; color: #fff; font-size: 2rem; cursor: pointer; padding: 10px; z-index: 10001; position: relative; }
