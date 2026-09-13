@@ -63,9 +63,14 @@
         .btn-circle i { background: var(--accent); color: #fff; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
         .btn-circle:hover i { transform: scale(1.1); background: var(--accent-hover); }
         
-        .scroll-cards { display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px; flex-grow: 1; scrollbar-width: none; }
+        .scroll-cards { 
+    display: flex; gap: 20px; overflow-x: auto; padding-bottom: 20px; flex-grow: 1; scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
         .scroll-cards::-webkit-scrollbar { display: none; }
-        .card-sq { flex: 0 0 220px; height: 220px; position: relative; border-radius: 10px; overflow: hidden; cursor: pointer; }
+        .card-sq { flex: 0 0 220px; height: 220px; position: relative; border-radius: 10px; overflow: hidden; cursor: pointer; scroll-snap-align: center; }
         .card-sq img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
         .card-sq:hover img { transform: scale(1.1); }
         .card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); display: flex; align-items: flex-end; padding: 20px; color: #fff; font-weight: 600; font-size: 1.1rem; }
@@ -234,8 +239,23 @@ html, body { max-width: 100vw; overflow-x: hidden; }
             /* Specific Components */
             .details-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
             .form-grid { grid-template-columns: 1fr !important; }
-            .pkg-card { margin-bottom: 20px; width: 100%; }
-            .packages-grid { flex-direction: column; }
+            .pkg-card { margin-bottom: 10px; width: auto; flex: 0 0 85%; scroll-snap-align: center; }
+            .packages-grid { 
+                flex-direction: row; 
+                flex-wrap: nowrap; 
+                overflow-x: auto; 
+                justify-content: flex-start;
+                padding-bottom: 20px;
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                gap: 20px;
+                margin: 0 -5%; /* Break out of section padding to allow edge-to-edge scroll */
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            .packages-grid::-webkit-scrollbar { display: none; }
             .parallax-banner { text-align: center; padding: 0 5%; }
             
             /* Touch Target Optimization */
