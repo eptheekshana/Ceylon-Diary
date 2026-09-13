@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter of the East Coast | Ceylon Diary</title>
+
+    <meta name="description" content="Discover Sri Lanka with Ceylon Diary. Explore luxury private tours, pristine beaches, ancient temples, wildlife safaris, and the legendary Ramayana trail.">
+    <meta name="keywords" content="Sri Lanka tourism, luxury travel Sri Lanka, private tours Sri Lanka, Ramayana trail Sri Lanka, Sri Lanka holidays, Ceylon Diary, private chauffeur Sri Lanka, honeymoon Sri Lanka, custom holiday Sri Lanka">
+    <meta property="og:title" content="Ceylon Diary | Luxury Private Tours Sri Lanka">
+    <meta property="og:description" content="Discover Sri Lanka with Ceylon Diary. Explore luxury private tours, pristine beaches, ancient temples, wildlife safaris, and the legendary Ramayana trail.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="img/logo.png" type="image/png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* -- CHAPTER SPECIFICS -- */
+        .stops-list { margin-top: 40px; position: relative; }
+        .stop-item { display: grid; grid-template-columns: 48px 1fr; gap: 24px; margin-bottom: 0; position: relative; padding-bottom: 40px; }
+        .stop-item:not(:last-child)::after { content: ''; position: absolute; left: 24px; top: 48px; bottom: 0; width: 2px; background: var(--border); }
+        .stop-number { width: 48px; height: 48px; border-radius: 16px; background: rgba(58, 29, 15, 0.1); color: var(--navy); display: flex; align-items: center; justify-content: center; font-family: var(--font-sans); font-size: 1.2rem; font-weight: 700; flex-shrink: 0; position: relative; z-index: 1; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .stop-body h3 { font-family: var(--font-sans); font-size: 1.4rem; font-weight: 700; color: var(--text-dark); margin-bottom: 8px; }
+        .stop-body p { font-size: 1rem; color: var(--text-muted); line-height: 1.6; }
+        .inline-img { width: 100%; max-width: 600px; border-radius: 16px; margin-top: 16px; height: 250px; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+
+        .details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+        .details-col h3 { font-family: var(--font-sans); font-size: 1.6rem; font-weight: 800; color: var(--text-dark); margin-bottom: 8px; }
+        .col-sub { font-size: 0.9rem; color: var(--accent); letter-spacing: 0.05em; margin-bottom: 24px; text-transform: uppercase; font-weight: 700; }
+        
+        .check-list li, .plus-list li, .optional-list li { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 1rem; color: var(--text-muted); display: flex; align-items: flex-start; gap: 12px; }
+        .check-list li:last-child, .plus-list li:last-child, .optional-list li:last-child { border: none; }
+        .check-list li::before { content: '\EB7A'; font-family: 'remixicon'; color: var(--navy); font-size: 1.1rem; }
+        .plus-list li::before { content: '\EE0C'; font-family: 'remixicon'; color: var(--accent); font-size: 1.1rem; }
+        .optional-list li::before { content: '\EA12'; font-family: 'remixicon'; color: #94A3B8; font-size: 1.1rem; }
+
+        .child-policy { margin-top: 24px; padding: 20px; background: var(--white); border-radius: 16px; font-size: 0.9rem; color: var(--text-muted); border: 1px solid var(--border); }
+        .child-policy strong { color: var(--text-dark); }
+
+        .tour-specs-container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 40px; }
+        .spec-item { background: rgba(255,255,255,0.1); padding: 15px 25px; border-radius: 100px; display: flex; align-items: center; gap: 10px; font-size: 0.9rem; }
+        .spec-item i { color: var(--accent); font-size: 1.2rem; }
+</style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div><i class="ri-phone-line"></i> +94 70 485 8688 &nbsp;&nbsp; <i class="ri-mail-line"></i> info@ceylondiary.com</div>
+        <div>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-whatsapp-line"></i></a>
+        </div>
+    </div>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo"> Ceylon Diary
+        </a>
+        <nav class="nav-links">
+            <a href="index.html#tours">Journeys</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-icons">
+            <i class="ri-search-line"></i>
+            <i class="ri-global-line"></i>
+        </div>
+        <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <i class="ri-menu-line"></i>
+        </button>
+    </header>
+
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url('img/Kitulgala.jpg') center/cover;">
+        <div class="hero-content" style="text-align: center; max-width: 1000px; margin: 0 auto;">
+            <div class="brush-font hero-title-2" style="color: var(--accent); margin-bottom: 20px;">Customizable Active Journey</div>
+            <div class="hero-title-1" style="font-size: 5rem;">Chapter of the East Coast</div>
+        </div>
+        <div class="torn-edge-white"></div>
+    </section>
+
+    <section class="section section-white">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center; margin-bottom: 60px;">
+            <div class="brush-font" style="font-size: 3rem; color: var(--navy); transform: rotate(-2deg);">Tour Overview</div>
+            <div style="font-size: 1.1rem; color: var(--text-muted); margin-top: 15px;"><p>Discover the beauty of Sri Lanka.</p></div>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="stops-list">
+                <div class="stop-item"><div class="stop-number">1</div><div class="stop-body"><h3>Kitulgala White Water Rafting</h3><p>Navigate exciting Grade 3-5 rapids on the Kelani River through lush rainforest, or add canyoning: abseil waterfalls and slide natural chutes.</p>
+                            <img src="img/Kitulgala White Water Rafting.jpg" alt="Kitulgala White Water Rafting" class="inline-img"></div></div>
+                <div class="stop-item"><div class="stop-number">2</div><div class="stop-body"><h3>Sigiriya & Hot Air Balloons</h3><p>Experience rural life with ox-cart rides, trek Pidurangala at sunrise, and float gently at dawn above jungles in a hot air balloon.</p>
+                            <img src="img/Sigiriya & Hot Air Balloons.jpg" alt="Sigiriya" class="inline-img"></div></div>
+                <div class="stop-item"><div class="stop-number">3</div><div class="stop-body"><h3>Hill Country Explorations</h3><p>Ride the scenic train from Kandy to Ella, hike to Little Adam's Peak, zipline over valleys, and trek the dawn 9km loop at Horton Plains.</p>
+                            <img src="img/ella.webp" alt="Hill Country Explorations" class="inline-img"></div></div>
+                <div class="stop-item"><div class="stop-number">4</div><div class="stop-body"><h3>Wildlife Safaris</h3><p>Jeep safaris in Yala spotting leopards, or witness huge elephant herds gathering at Kaudulla & Udawalawe reservoirs.</p>
+                            <img src="img/Wildlife Safaris.jpg" alt="Wildlife Safaris" class="inline-img"></div></div>
+                <div class="stop-item"><div class="stop-number">5</div><div class="stop-body"><h3>Coastal & Marine Activities</h3><p>Whale watching in Mirissa, surfing in Weligama, water sports in Bentota, kitesurfing in Kalpitiya, and scuba diving in Hikkaduwa.</p>
+                            <img src="img/Coastal & Marine Activities.jpg" alt="Coastal" class="inline-img"></div></div>
+                <div class="stop-item"><div class="stop-number">6</div><div class="stop-body"><h3>Rainforest & Culture</h3><p>Guided walks in the UNESCO-listed Sinharaja Rainforest and hands-on authentic Sri Lankan cooking classes.</p>
+                            <img src="img/Rainforest & Culture.webp" alt="Rainforest" class="inline-img"></div></div>
+</div>
+            <div style="background: rgba(224, 79, 0, 0.1); border-left: 4px solid var(--accent); padding: 20px; border-radius: 0 10px 10px 0;">
+                <p>This itinerary can be customized.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-cream" style="padding-top: 100px;">
+        <div class="torn-cream-top"></div>
+        
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <div class="details-grid">
+                    <div class="details-col">
+                        <h3>Luxury Tour Includes</h3>
+                        <div class="col-sub">What's covered</div>
+                        <ul class="check-list">
+                            <li>Luxury air-conditioned vehicles</li>
+                            <li>Professional English-speaking chauffeur-guide</li>
+                            <li>Fully customizable itinerary</li>
+                            <li>Trusted service provider partnerships for adventure activities</li>
+                            <li>Free Wi-Fi & Unlimited bottled water</li>
+                            <li>Accommodation in 5-star luxury hotels (Bed & Breakfast)</li>
+                            <li>All destination entrance fees & taxes</li>
+                        </ul>
+                        <div class="child-policy"><strong>Child Policy:</strong> Children below 6 years travel free; 6-12 years 50% discount.</div>
+                    </div>
+                    <div class="details-col">
+                        <h3>Complimentary Experiences</h3>
+                        <div class="col-sub">Free of charge</div>
+                        <ul class="plus-list">
+                            <li>Turtle hatchery visit</li>
+                            <li>Madu Ganga River Safari</li>
+                            <li>Kaudulla National Park Safari</li>
+                            <li>Scenic train ride from Kandy to Ella</li>
+                            <li>Traditional Sri Lankan cooking experience</li>
+                        </ul>
+                        <h3 style="margin-top:40px;">Optional Activities</h3>
+                        <div class="col-sub">Pay at your own cost</div>
+                        <ul class="optional-list">
+                            <li>Yala / Wilpattu National Park safari</li>
+                            <li>Sigiriya village tour (including kayaking & bullock cart)</li>
+                            <li>Water sports & Whale watching</li>
+                            <li>White-water rafting in Kitulgala</li>
+                        </ul>
+                    </div>
+</div>
+        </div>
+        <div class="torn-navy-bottom"></div>
+    </section>
+
+    <section class="section section-dark" style="text-align: center; padding: 120px 5%;">
+        <div class="brush-font" style="font-size: 4rem; color: var(--blue-bg); margin-bottom: 20px;">Start Your Journey</div>
+        <p style="font-size: 1.2rem; opacity: 0.8; max-width: 600px; margin: 0 auto 40px;">100% Tailor-Made exclusively for you. Let's create your dream adventure.</p>
+        
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <a href="mailto:info@ceylondiary.com" class="btn-premium"><i class="ri-mail-send-line"></i> Request A Quote</a>
+            <a href="https://wa.me/94704858688" class="btn-premium whatsapp"><i class="ri-whatsapp-line"></i> WhatsApp</a>
+        </div>
+
+        <div class="tour-specs-container">
+            <div class="spec-item">Duration <strong style="color:white; margin-left:5px;">Flexible</strong></div><div class="spec-item">Comfort <strong style="color:white; margin-left:5px;">Luxury</strong></div><div class="spec-item">Guide <strong style="color:white; margin-left:5px;">English-Speaking</strong></div><div class="spec-item">Type <strong style="color:white; margin-left:5px;">Adventure</strong></div><div class="spec-item">Flexibility <strong style="color:white; margin-left:5px;">Fully Customizable</strong></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom:20px;">
+                    <img src="img/logo.png" alt="Logo"> Ceylon Diary
+                </div>
+                <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Crafting extraordinary private travel experiences across every corner of Sri Lanka.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Journeys</h4>
+                <a href="chapter-of-highlights.html">Highlights Tour</a>
+                <a href="chapter-of-the-east-coast.html">East Coast</a>
+                <a href="chapter-of-adventures.html">Adventures</a>
+                <a href="chapter-of-romance.html">Romance</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="#">info@ceylondiary.com</a>
+                <a href="#">+94 70 485 8688</a>
+                <div style="margin-top:20px; display:flex; gap:10px;">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-whatsapp-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2026 Ceylon Diary Travels. All rights reserved.</div>
+            <div>Developed by <a href="https://eptheekshana.dev" target="_blank" style="color: inherit; text-decoration: underline;">eptheekshana.dev</a></div>
+        </div>
+    </footer>
+
+
+    <!-- FLOATING CONTACT BUTTONS -->
+    <div class="floating-contact">
+        <a href="mailto:info@ceylondiary.com" class="float-btn float-mail" title="Request A Quote"><i class="ri-mail-send-line"></i></a>
+        <a href="https://wa.me/94704858688" class="float-btn float-wa" title="WhatsApp Us"><i class="ri-whatsapp-line"></i></a>
+    </div>
+
+    <script src="js/search.js"></script>
+</body>
+</html>
